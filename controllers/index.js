@@ -1,3 +1,3 @@
 module.exports = {
-    burgers: require('./burgerController')
+    burgers: require('./burgerController.js')
 }

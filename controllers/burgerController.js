@@ -3,7 +3,7 @@ const db = require('../config')
 module.exports = {
     // retrieve all burgers from db
   getBurgers(cb) {
-    db.query('SELECT * FROM burger_name', (e, burgers) => {
+    db.query('SELECT * FROM burgers', (e, burgers) => {
       if (e) {
         console.log(e)
       }
@@ -32,7 +32,7 @@ module.exports = {
   },
 //   delete burger
   removeBurgers(id, cb) {
-    db.query(`DELETE FROM burger_name WHERE id = ${id}`, e => {
+    db.query(`DELETE FROM burgers WHERE id = ${id}`, e => {
       if (e) {
         console.log(e)
       }
